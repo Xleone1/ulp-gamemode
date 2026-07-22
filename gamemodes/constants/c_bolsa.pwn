@@ -1,0 +1,11 @@
+#define MAX_ARTICULOS_COUNT				    50
+#define A_NADA	                            0
+#define A_CERVEZA                           1
+#define A_VODKA                             2
+#define A_REFRESCO                          3
+#define A_POLLO                             4
+#define A_POLLO_C                           5
+#define A_PAPAS                             6
+#define A_PAPAS_C                           7
+#define A_ARROZ                             8
+#define A_ARROZ_C                           9

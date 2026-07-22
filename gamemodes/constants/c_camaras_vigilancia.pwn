@@ -1,0 +1,1 @@
+#define MAX_CAMERAS_COUNT 50

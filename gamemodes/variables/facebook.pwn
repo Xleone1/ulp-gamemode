@@ -1,0 +1,2 @@
+new Facebook[MAX_PLAYERS][MAX_PLAYERS];
+new PlayerText3D:NameTags[MAX_PLAYERS][MAX_PLAYERS];

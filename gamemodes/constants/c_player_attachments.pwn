@@ -1,0 +1,10 @@
+#define TYPE_NADA	                    	0
+#define TYPE_MALETIN                   		1
+#define TYPE_GAFAS                          2
+#define TYPE_PELO                           3
+#define TYPE_BOINA                          4
+#define TYPE_GORRAS                         5
+#define TYPE_RELOJES                        6
+#define TYPE_CASCO                          7
+#define TYPE_TASER                          8
+#define MAX_OBJECTS_PLAYERS 9

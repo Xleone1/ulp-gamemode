@@ -1,0 +1,38 @@
+# Compiled Pawn bytecode
+*.amx
+.env
+
+# Credenciales locales
+mysql.ini
+
+# logs
+*.txt
+
+# backups
+*.bak
+
+# Editor/IDE
+.vscode/
+.vscode/**
+.DS_Store
+Thumbs.db
+
+# Linux Pawn compiler
+qawno/pawncc
+qawno/libpawnc.so
+
+# Pawn compiler descargas
+pawnc-*/
+pawnc-*-linux/
+*.tar.gz
+
+# Drafts de documentaciones
+docs/
+tools/
+logs/
+gamemodes/compile
+gamemodes/compile
+
+# Comopnentes de Windows
+components/*.dll
+components/*.pdb

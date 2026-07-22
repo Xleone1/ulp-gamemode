@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="file:///C|/Users/braya/Downloads/gamemode-samp/qawno/xml/pawndoc.xsl" type="text/xsl"?>
+<doc source="C:\Users\braya\Downloads\gamemode-samp\qawno\include\a_mysql.inc">
+	<assembly>
+		<name>a_mysql.inc</name>
+	</assembly>
+
+	<!-- general -->
+	<general>
+		MySQL plugin R41-4 
+	</general>
+
+	<members>
+
+		<!-- enumerations -->
+
+		<!-- constants -->
+		<member name="C:false" value="0">
+			<tagname value="bool"/>
+		</member>
+		<member name="C:true" value="1">
+			<tagname value="bool"/>
+		</member>
+
+		<!-- variables -->
+		<member name="F:__date">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__time">
+		</member>
+
+		<!-- functions -->
+		<member name="M:OnQueryError" syntax="OnQueryError(errorid, error[], callback[], query[], handle)">
+			<stacksize value="1"/>
+			<param name="errorid">
+			</param>
+			<param name="error">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="callback">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="query">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="handle">
+				<paraminfo>MySQL </paraminfo>
+			</param>
+		</member>
+		<member name="M:cache_get_field_count" syntax="cache_get_field_count(&amp;destination)">
+			<attribute name="native"/>
+			<referrer name="cache_num_fields"/>
+			<param name="destination">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:cache_get_result_count" syntax="cache_get_result_count(&amp;destination)">
+			<attribute name="native"/>
+			<referrer name="cache_num_results"/>
+			<param name="destination">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:cache_get_row_count" syntax="cache_get_row_count(&amp;destination)">
+			<attribute name="native"/>
+			<referrer name="cache_num_rows"/>
+			<param name="destination">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:cache_get_value_index_bool" syntax="cache_get_value_index_bool(row_idx, column_idx, &amp;destination)">
+			<stacksize value="5"/>
+			<dependency name="cache_get_value_index_int"/>
+			<param name="row_idx">
+			</param>
+			<param name="column_idx">
+			</param>
+			<param name="destination">
+				<paraminfo>bool &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:cache_get_value_index_int" syntax="cache_get_value_index_int(row_idx, column_idx, &amp;destination)">
+			<attribute name="native"/>
+			<referrer name="cache_get_value_index_bool"/>
+			<param name="row_idx">
+			</param>
+			<param name="column_idx">
+			</param>
+			<param name="destination">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:cache_get_value_name_bool" syntax="cache_get_value_name_bool(row_idx, column_name[], &amp;destination)">
+			<stacksize value="5"/>
+			<dependency name="cache_get_value_name_int"/>
+			<param name="row_idx">
+			</param>
+			<param name="column_name">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="destination">
+				<paraminfo>bool &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:cache_get_value_name_int" syntax="cache_get_value_name_int(row_idx, column_name[], &amp;destination)">
+			<attribute name="native"/>
+			<referrer name="cache_get_value_name_bool"/>
+			<param name="row_idx">
+			</param>
+			<param name="column_name">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="destination">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:cache_num_fields" syntax="cache_num_fields()">
+			<stacksize value="4"/>
+			<dependency name="cache_get_field_count"/>
+		</member>
+		<member name="M:cache_num_results" syntax="cache_num_results()">
+			<stacksize value="4"/>
+			<dependency name="cache_get_result_count"/>
+		</member>
+		<member name="M:cache_num_rows" syntax="cache_num_rows()">
+			<stacksize value="4"/>
+			<dependency name="cache_get_row_count"/>
+		</member>
+
+	</members>
+</doc>
